@@ -14,6 +14,7 @@ unittests/*.sh
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
+pk_cpp/
 *.py[cod]
 *$py.class
 
