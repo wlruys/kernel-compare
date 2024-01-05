@@ -8,6 +8,7 @@ python run_benchmark.py
 ``
 
 # Results for DAXPY (M2 Mac, ran on plane to test if threaded parallelism can be achieved / GIL was released)
+
 ```
 Test Numpy
 Threads: 1 | Median Time: 0.39301833299396094
@@ -39,6 +40,7 @@ Threads: 1 | Median Time: 0.034504124999998
 Threads: 2 | Median Time: 0.03639695900000106
 Threads: 3 | Median Time: 0.03581791700000281
 Threads: 4 | Median Time: 0.03660024999999223
+
 ```
 
 This is a very very memory bound kernel and does not get speedup
