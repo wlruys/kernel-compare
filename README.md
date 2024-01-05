@@ -5,7 +5,7 @@
 ```
 pip install . 
 python run_benchmark.py
-``
+```
 
 # Results for DAXPY (M2 Mac, ran on plane to test if threaded parallelism can be achieved / GIL was released)
 
