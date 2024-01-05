@@ -8,8 +8,8 @@ pk.set_default_space(pk.OpenMP)
 def daxpy_kernel(
     tid: int,
     a: float,
-    x: pk.View1D[float],
-    y: pk.View1D[float],
+    x: pk.View1D[pk.double],
+    y: pk.View1D[pk.double],
     start: int,
     end: int,
     stride: int = 1,
@@ -20,8 +20,8 @@ def daxpy_kernel(
 
 def daxpy_handle(
     a: float,
-    x: pk.View1D[float] | np.ndarray,
-    y: pk.View1D[float] | np.ndarray,
+    x: pk.View1D[pk.double] | np.ndarray,
+    y: pk.View1D[pk.double] | np.ndarray,
     start: int,
     end: int,
 ):
